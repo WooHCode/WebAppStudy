@@ -1,6 +1,6 @@
 package com.example.WebAppStudy.web;
 
-import com.example.WebAppStudy.service.posts.PostsService;
+import com.example.WebAppStudy.service.PostsService;
 import com.example.WebAppStudy.web.dto.PostsResponseDto;
 import com.example.WebAppStudy.web.dto.PostsSaveRequestDto;
 import com.example.WebAppStudy.web.dto.PostsUpdateRequestDto;

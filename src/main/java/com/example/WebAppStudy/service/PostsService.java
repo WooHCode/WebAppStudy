@@ -1,4 +1,4 @@
-package com.example.WebAppStudy.service.posts;
+package com.example.WebAppStudy.service;
 
 import com.example.WebAppStudy.domain.posts.Posts;
 import com.example.WebAppStudy.domain.posts.PostsRepository;
