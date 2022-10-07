@@ -1,5 +1,6 @@
 package com.example.WebAppStudy.web;
 
+import com.example.WebAppStudy.config.auth.LoginUser;
 import com.example.WebAppStudy.config.auth.dto.SessionUser;
 import com.example.WebAppStudy.service.PostsService;
 import com.example.WebAppStudy.web.dto.PostsResponseDto;
@@ -19,9 +20,8 @@ public class IndexController {
     private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model){
+    public String index(Model model, @LoginUser SessionUser user){
         model.addAttribute("posts",postsService.findAllDesc());
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
 
         if(user != null){
             model.addAttribute("googleUserName", user.getName());
